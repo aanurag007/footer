@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Added box-sizing for better layout handling */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .footer {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+
+      .left {
+        width: 50%;
+        background-color: rgb(22, 22, 164);
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .left > img {
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 30px; */
+        width: 60%; /* Adjusted width for responsiveness */
+      }
+
+      .right {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(93, 93, 253);
+        width: 50%;
+      }
+
+      .right > div {
+        width: 25%; /* Adjusted width for responsiveness */
+        padding-top: 70px; /* Adjusted padding for responsiveness */
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+
+      p,
+      h4 {
+        color: rgb(239, 234, 224);
+        padding: 10px;
+      }
+
+      .foot {
+        display: flex;
+        justify-content: space-between; /* Added to separate the sections */
+        align-items: center; /* Centered vertically */
+        background-color: rgb(45, 43, 43);
+        height: 100px;
+      }
+
+      .left1 {
+        display: flex;
+        align-items: center;
+      }
+
+      .indian_flag {
+        width: 40px;
+        border-radius: 50%;
+        margin-left: 8px;
+      }
+      h5 {
+        color: azure;
+      }
+      .icon {
+        margin: 20px;
+      }
+      a {
+        color: azure;
+        padding: 8px;
+      }
+      span {
+        color: aliceblue;
+      }
+      @media only screen and (max-width: 768px) {
+        .img {
+          width: 50%;
+        }
+
+        .right {
+          width: 90%;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        /* Styles for screens with a maximum width of 480px or less */
+
+        .img {
+          width: 100%;
+        }
+
+        .right {
+          width: 100%;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="footer">
+      <div class="left">
+        <img
+          class="img"
+          src="https://media.licdn.com/dms/image/D4D12AQFadmhNxKixpA/article-cover_image-shrink_600_2000/0/1700939509421?e=2147483647&v=beta&t=7VIrYPIN7bljVpnNtYE2Kgmhj50TUOVK5dDJgqJDIKs"
+          alt=""
+        />
+      </div>
+      <div class="right">
+        <div class="shop">
+          <h4>Shop</h4>
+          <p>Gift cards</p>
+          <p>Etsy Registry</p>
+          <p>Sitemap</p>
+          <p>Etsy blog</p>
+          <p>Etsy United Kingdom</p>
+          <p>Etsy Germany</p>
+          <p>Etsy Canada</p>
+        </div>
+        <div class="sell">
+          <h4>Sell</h4>
+          <p>Sell on Etsy</p>
+          <p>Teams</p>
+          <p>Forums</p>
+          <p>Affiliates & Creators</p>
+        </div>
+        <div class="about">
+          <h4>About</h4>
+          <p>Etsy, Inc</p>
+          <p>Policies</p>
+          <p>Investors</p>
+          <p>Careers</p>
+          <p>Press</p>
+          <p>Impact</p>
+          <p>Legal imprint</p>
+        </div>
+        <div class="shop">
+          <h4>Shop</h4>
+          <p>Gift cards</p>
+          <p>Etsy Registry</p>
+          <p>Sitemap</p>
+          <p>Etsy blog</p>
+          <p>Etsy United Kingdom</p>
+          <p>Etsy Germany</p>
+          <p>Etsy Canada</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="left1">
+        <div class="flag">
+          <img
+            class="indian_flag"
+            src="https://www.mapsofindia.com/maps/india/india-flag.jpg"
+            alt=""
+          />
+        </div>
+        <div class="icon">
+          <h5>
+            India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8377;&nbsp;(INR)
+          </h5>
+        </div>
+      </div>
+      <div class="right1">
+        <span
+          >&copy; 2024 Etsy. Inc. <a href="#">Term of Use</a
+          ><a href="#">Privacy</a><a href="#">Interest based ads</a
+          ><a href="#">Local Shop</a><a href="#">Regions</a></span
+        >
+      </div>
+    </div>
+  </body>
+</html>
