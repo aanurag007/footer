@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(#f63c3c, #3f87a6);
+      }
+      #yes {
+        width: 400px;
+        height: 400px;
+
+        margin-left: 400px;
+        margin-top: 300px;
+        position: relative;
+      }
+      #yes > div {
+        width: 200px;
+        height: 200px;
+
+        position: absolute;
+        top: 45%;
+        left: 45%;
+      }
+      @keyframes move {
+        100% {
+          transform: translate(280px);
+        }
+      }
+      @keyframes move1 {
+        100% {
+          transform: translate(-280px);
+        }
+      }
+      #yes > div:nth-of-type(1) {
+        animation: move 2s infinite;
+      }
+      #yes > div:nth-of-type(2) {
+        animation: move1 2s infinite;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="yes">
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img src="https://pngimg.com/d/tom_and_jerry_PNG58.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
